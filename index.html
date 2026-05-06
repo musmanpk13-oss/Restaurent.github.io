@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+	<head> 
+		<title> sample 6 </title>
+	<style>
+		.border1{
+			border:1px solid rgba(0,0,0,0.3);
+			width:83%;
+			margin-left:100px;
+			padding-bottom: 17px;
+			margin-top: 55px;
+			border-radius: 5px;
+			background-color:white;
+		}
+		.border2{
+			border:1px solid rgba(0,0,0,0.3);
+			width:96.5%;
+			margin-left: 15px;
+			border-radius: 5px;
+			background-color:#f8f7f3;
+		}
+		.border3{
+			margin: 0 14px 0 14px;
+			border-radius: 5px;
+		}
+		.border4{
+			margin: 0 14px 0 14px;
+			border-radius: 5px;
+		}
+		.Heading{
+			font-family: sans-serif;
+			border-left: 4px solid red;
+			margin-left: 100px;
+			padding-left: 8px;
+		}
+	</style>
+	</head>
+<body style="padding-top: 30px;background-color:#fffdf1;">
+	<p style="font-family: monospace;padding-left: 99px;position: absolute;top:24px;color:red;">
+		CHAPTER 05
+	</p>
+	<h1 class="Heading"> HTML Forms & Input Types </h1>
+	<p style="font-family:monospace;padding-left: 111px;position: absolute;bottom: 501px;">
+		Collecting user data with every input type and form attribute.
+	</p>
+	<form method="get">
+		<div class="border1">
+			<p style="font: bold 14px monospace, serif;padding-left: 15px;color:#658d9c;"> 
+				COMPLETE FORM WITH ALL INPUT Types
+			</p>
+			<div class="border2">
+				<p style="font-family: monospace;padding-left: 13px;">
+					LIVE OUTPUT - FULL REGISTRATION FORM
+				<P>
+				<fieldset class="border3">
+					<legend> Personal Information </legend>
+						<label for="style1" style="font:bold 12px sans-serif;"> Full Name(required,maxlength=50) </label><br>
+						<input type="text" id="style1" name="Name" style="width:98%;margin-top: 10px;padding: 6px;"placeholder="e.g. Mian Usman"><br><br>
+						<label for="style2" style="font:bold 12px sans-serif;"> Email Address </label><br>
+						<input type="email" id="style2" name="Email" style="width:97.9%;margin-top: 10px;padding: 6px;"placeholder="user@example.com"><br><br>
+						<label for="style3" style="font:bold 12px sans-serif;"> Password(pattern:8+chars) </label><br>
+						<input type="password" id="style3" name="Password" style="width:98%;margin-top: 10px;padding: 6px;" pattern="[A-Za-z0-9]{8}"><br><br>
+						<label for="style4" style="font:bold 12px sans-serif;"> Your Website URL </label><br>
+						<input type="url" id="style4" name="URL" style="width:97.9%;margin-top: 10px;padding: 6px;"placeholder="https://yoursite.com"><br><br>
+						<label for="style5" style="font:bold 12px sans-serif;"> Date of Birth </label><br>
+						<input type="date" id="style5" name="DATE" style="width:97.8%;margin-top: 10px;padding: 6px;"><br><br>
+						<label for="style6" style="font:bold 12px sans-serif;"> Favourite Colour </label><br>
+						<input type="color" id="style6" name="Colour" style="margin-top: 10px;">
+				</fieldset>
+				<fieldset class="border4">
+					<legend> Preferences </legend>
+						<label for="style7" style="font:bold 12px sans-serif;"> Age(number input:1-120) </label><br>
+						<input type="number" id="style7" name="Age" style="width:97.7%;margin-top: 10px;padding: 6px;" min="1" max="120"><br><br>
+						<label for="style8" style="font:bold 12px sans-serif;"> Skill Level(range slider) </label><br>
+						<input type="range" id="style8" name="Range" style="width:99%;margin-top: 10px;"><br><br>
+						<label style="font:bold 12px sans-serif;"> Favourite Subjects(checkboxes) </label><br>
+						<input type="checkbox" id="style9" name="Checkbox" style="margin-top: 10px;">
+						<label for="style9"> HTML </label>
+						<input type="checkbox" id="style10" name="Checkbox">
+						<label for="style10"> CSS </label>
+						<input type="checkbox" id="style11" name="Checkbox">
+						<label for="style11"> JavaScript </label><br><br>
+						<label style="font:bold 12px sans-serif;"> Experience Level(radio) </label><br>
+						<input type="radio" id="style12" name="Radio" style="margin-top: 10px;">
+						<label for="style12"> Beginner </label>
+						<input type="radio" id="style13" name="Radio">
+						<label for="style13"> Intermediate </label>
+						<input type="radio" id="style14" name="Radio">
+						<label for="style14"> Advanced </label><br><br>
+						<label style="font:bold 12px sans-serif;"> City(dropdown) </label><br>
+							<select style="width:99.5%;margin-top: 10px;padding: 6px;">
+								<option> --Select your city-- </option>
+								<option> Shahkot </option>
+								<option> Lahore </option>
+								<option> Faisalabad </option>
+							</select><br><br>
+						<label for="style15" style="font:bold 12px sans-serif;"> Short Bio(textarea,3 rows,max 200 chars) </label><br>
+							<textarea name="Textarea" id="style15" style="width:98%;margin-top: 10px;padding-left: 10px;;"placeholder="Tell us about yourself..." rows="3" maxlength="200"></textarea>
+				</fieldset>
+						<input type="submit" name="Button" value="Submit Form→" style="margin: 14px;background-color:red;color:white;border:none;border-radius:5px;font-family: Courier Prime;padding: 7px;">
+						<input type="reset" name="Button1" value="Clear All" style="margin-left: -10px;font-family: Courier Prime;background-color:#6b6b75;color:white;border:none;border-radius: 5px;padding: 7px;">
+			</div>
+		</div>
+	</form>
+	
+</body>
+</html>
